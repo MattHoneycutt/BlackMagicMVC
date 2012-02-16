@@ -10,25 +10,7 @@ Public Class Global_asax
 	Sub Application_Start(ByVal sender As Object, ByVal e As EventArgs)
 		' Fires when the application is started
 
-		AreaRegistration.RegisterAllAreas()
-		RegisterRoutes(RouteTable.Routes)
-		BlackMagicRoutes.Register(RouteTable.Routes)
-		'PortableAreaRegistration.RegisterEmbeddedViewEngine()
-
-	End Sub
-
-	Private Sub RegisterRoutes(routes As RouteCollection)
-
-		routes.IgnoreRoute("{resource}.axd/{*pathInfo}")
-
-		'' MapRoute takes the following parameters, in order:
-		'' (1) Route name
-		'' (2) URL with parameters
-		'' (3) Parameter defaults
-		'routes.MapRoute("Default",
-		'	"{controller}/{action}/{id}",
-		'	New With {.controller = "Home", .action = "Index", .id = UrlParameter.Optional}
-		')
+		BlackMagicMvcBootstrapper.Bootstrap()
 
 	End Sub
 
