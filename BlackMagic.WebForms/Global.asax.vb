@@ -1,7 +1,6 @@
 ﻿Imports System.Web.SessionState
 Imports System.Web.Routing
 Imports System.Web.Mvc
-Imports MvcContrib.PortableAreas
 Imports BlackMagic.Mvc
 
 Public Class Global_asax

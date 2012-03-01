@@ -2,7 +2,7 @@
 
 namespace BlackMagic.Mvc.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BlackMagicController
     {
         public ActionResult Index()
         {
