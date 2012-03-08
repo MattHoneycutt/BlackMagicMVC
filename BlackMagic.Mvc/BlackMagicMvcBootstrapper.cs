@@ -15,7 +15,7 @@ namespace BlackMagic.Mvc
 
 			routes.MapRoute("HomeRoute",
 							 "{controller}/{action}",
-							 new { controller = "Home", action = "Index" });
+							 new { action = "Index" });
 		}
 	}
 }

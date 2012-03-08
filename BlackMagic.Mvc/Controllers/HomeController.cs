@@ -8,5 +8,10 @@ namespace BlackMagic.Mvc.Controllers
         {
             return View();
         }
+
+		public ActionResult SayHello()
+		{
+			return View();
+		}
     }
 }

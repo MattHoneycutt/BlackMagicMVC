@@ -8,7 +8,7 @@ namespace BlackMagic.Mvc.WebFormsBridge
 		{
 			var result = base.CreateActionResult(controllerContext, actionDescriptor, actionReturnValue);
 
-			if (result is ViewResult)
+			if (result is ViewResult && !controllerContext.IsChildAction)
 			{
 				result = new RazorBridgeViewResult((ViewResult) result);
 			}
